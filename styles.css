@@ -272,7 +272,7 @@ h2 {
   box-shadow: 0 0 0 0.25rem rgb(79 138 85 / 13%);
 }
 
-.monogram-wrap {
+.profile-photo-wrap {
   position: relative;
   display: grid;
   width: 12.5rem;
@@ -283,27 +283,12 @@ h2 {
   background: rgb(255 250 244 / 48%);
 }
 
-.monogram {
-  display: grid;
-  width: 9rem;
-  height: 9rem;
-  place-items: center;
+.profile-photo {
+  width: 11.5rem;
+  height: 11.5rem;
+  object-fit: cover;
+  object-position: 38% 28%;
   border-radius: 50%;
-  background: var(--color-orange);
-  box-shadow: 0 1rem 2rem rgb(168 60 25 / 20%);
-  color: #fffaf4;
-  font-family: var(--font-heading);
-  font-size: 3.4rem;
-  font-weight: 800;
-  letter-spacing: -0.09em;
-}
-
-.monogram-spark {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.4rem;
-  color: #c78e27;
-  font-size: 2rem;
 }
 
 .intro-card-caption {
@@ -558,6 +543,16 @@ h2 {
   margin: 0 0 0.25rem;
 }
 
+.project-group + .project-group {
+  margin-top: 3rem;
+}
+
+.project-group-title {
+  margin-bottom: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
 .project-card {
   position: relative;
   height: 100%;
@@ -602,6 +597,15 @@ h2 {
   font-weight: 700;
 }
 
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0.85rem 0 1rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
 .project-card p {
   min-height: 3.5rem;
   margin-bottom: 1rem;
@@ -609,8 +613,28 @@ h2 {
   font-size: 0.92rem;
 }
 
+.project-contribution {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background: #fff4e7;
+}
+
+.project-contribution h4 {
+  margin-bottom: 0.45rem;
+  color: var(--color-orange-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.project-contribution p {
+  min-height: 0;
+  margin: 0;
+  font-size: 0.86rem;
+}
+
 .project-tech,
-.project-link-placeholder {
+.project-link {
   color: #6b5d4d;
   font-size: 0.8rem;
   font-weight: 600;
@@ -621,7 +645,7 @@ h2 {
   border-top: 1px solid var(--color-line);
 }
 
-.project-link-placeholder {
+.project-link {
   display: inline-block;
   margin-top: 0.65rem;
   color: var(--color-orange-dark);
@@ -674,15 +698,15 @@ h2 {
   gap: 1rem;
 }
 
-.github-link {
+.social-link {
   color: #ffe0b5;
   font-size: 0.92rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.github-link:hover,
-.github-link:focus {
+.social-link:hover,
+.social-link:focus {
   color: #fff;
   text-decoration: underline;
 }
