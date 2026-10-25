@@ -1,0 +1,376 @@
+:root {
+  color-scheme: light;
+  --fundo: #fffaf4;
+  --fundo-destaque: #fff3e4;
+  --texto: #29251f;
+  --texto-suave: #746d64;
+  --laranja: #dc5b2a;
+  --laranja-escuro: #a83c19;
+  --borda: #eadfd2;
+  --font-body: "DM Sans", sans-serif;
+  --font-heading: "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+.pagina-inicial {
+  position: relative;
+  display: flex;
+  width: min(100% - 3rem, 1080px);
+  min-height: 100vh;
+  min-height: 100svh;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1rem, 3vh, 2rem) 0;
+  margin: 0 auto;
+}
+
+.cabecalho,
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cabecalho {
+  position: relative;
+  z-index: 1;
+  margin-bottom: clamp(1.25rem, 4vh, 3rem);
+}
+
+.assinatura {
+  color: var(--texto);
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: -0.1em;
+  text-decoration: none;
+}
+
+.assinatura span {
+  color: var(--laranja);
+}
+
+.cabecalho-texto,
+.tipo,
+.status {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.cabecalho-texto {
+  color: var(--texto-suave);
+  font-family: var(--font-heading);
+}
+
+.apresentacao,
+.opcoes,
+.rodape {
+  position: relative;
+  z-index: 1;
+}
+
+.apresentacao {
+  max-width: 700px;
+  margin-bottom: clamp(2rem, 5vh, 3.5rem);
+}
+
+.etiqueta {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--laranja-escuro);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.etiqueta span {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--laranja);
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  margin-bottom: 0.6rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2.35rem, 5.5vw, 4.2rem);
+  letter-spacing: -0.07em;
+  line-height: 1.02;
+}
+
+.introducao {
+  color: var(--texto-suave);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.opcoes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.cartao {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1rem, 2.2vw, 1.5rem);
+  border: 1px solid var(--borda);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 78%);
+  box-shadow: 0 0.8rem 2rem rgb(87 56 34 / 5%);
+}
+
+.cartao-formal {
+  background:
+    linear-gradient(140deg, rgb(220 91 42 / 7%), transparent 65%),
+    #fff;
+}
+
+.cartao-informal {
+  border-color: #f0dfca;
+  background:
+    linear-gradient(140deg, rgb(246 199 83 / 13%), transparent 65%),
+    var(--fundo-destaque);
+}
+
+.cartao-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(0.5rem, 1.2vh, 0.85rem);
+}
+
+.numero {
+  color: var(--texto-suave);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.tipo {
+  margin-bottom: 0.35rem;
+  color: var(--texto-suave);
+}
+
+.cartao h2 {
+  margin-bottom: 0.45rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.05em;
+}
+
+.descricao,
+.recado {
+  color: var(--texto-suave);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.descricao {
+  margin-bottom: 0.7rem;
+}
+
+.botao {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.botao:hover,
+.botao:focus-visible {
+  transform: translateY(-2px);
+}
+
+.botao:focus-visible {
+  outline: 3px solid var(--laranja-escuro);
+  outline-offset: 3px;
+}
+
+.botao-formal {
+  background: var(--laranja);
+  color: #fff;
+  box-shadow: 0 0.5rem 1.8rem rgb(220 91 42 / 18%);
+}
+
+.botao-formal:hover,
+.botao-formal:focus-visible {
+  background: var(--laranja-escuro);
+  color: #fff;
+  box-shadow: 0 0.6rem 2rem rgb(220 91 42 / 25%);
+}
+
+.cartao-informal .descricao {
+  min-height: 0;
+  margin-bottom: 0.8rem;
+}
+
+.recado {
+  margin-bottom: 0.65rem;
+  font-size: 0.88rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid #e8b89f;
+  border-radius: 99rem;
+  background: #ffead7;
+  color: var(--laranja-escuro);
+}
+
+.rodape {
+  margin-top: auto;
+  padding-top: clamp(1rem, 3vh, 2rem);
+  color: var(--texto-suave);
+  font-size: 0.78rem;
+}
+
+.brilho {
+  position: fixed;
+  width: 22rem;
+  height: 22rem;
+  border: 1px solid rgb(220 91 42 / 12%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.brilho-rosa {
+  top: 25%;
+  right: -15rem;
+}
+
+.brilho-azul {
+  bottom: -12rem;
+  left: -12rem;
+  border-color: rgb(246 199 83 / 18%);
+}
+
+@media (max-width: 700px) {
+  .pagina-inicial {
+    width: min(100% - 2rem, 520px);
+    justify-content: flex-start;
+  }
+
+  .cabecalho {
+    margin-bottom: clamp(1.25rem, 4vh, 2.5rem);
+  }
+
+  .apresentacao {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 8vw, 3.6rem);
+  }
+
+  .cartao {
+    padding: 0.9rem 1rem;
+  }
+
+  .cartao-topo {
+    margin-bottom: 0.65rem;
+  }
+
+  .cartao h2 {
+    margin-bottom: 0.4rem;
+    font-size: 1.65rem;
+  }
+
+  .descricao {
+    min-height: 0;
+    margin-bottom: 0.7rem;
+    font-size: 0.88rem;
+  }
+
+  .recado {
+    margin-bottom: 0.7rem;
+    font-size: 0.82rem;
+  }
+
+  .botao {
+    min-height: 2.7rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.84rem;
+  }
+
+  .rodape {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .opcoes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-height: 740px) and (min-width: 701px) {
+  .cabecalho {
+    margin-bottom: 1rem;
+  }
+
+  .apresentacao {
+    margin-bottom: 2rem;
+  }
+
+  .cartao {
+    padding: 1.25rem;
+  }
+
+  .cartao-topo {
+    margin-bottom: 0.65rem;
+  }
+
+  .rodape {
+    margin-top: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

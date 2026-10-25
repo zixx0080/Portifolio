@@ -4,6 +4,7 @@ Oi! Este é meu portfólio, onde mostro um pouco do que estou estudando, alguns 
 
 ## O que tem por aqui
 
+- Uma página inicial para escolher entre meu portfólio formal e informal
 - Uma apresentação sobre mim
 - Minha formação e as tecnologias que venho aprendendo
 - Projetos da faculdade e projetos pessoais
@@ -34,6 +35,8 @@ Depois, abra [http://localhost:8000](http://localhost:8000).
 ## Arquivos principais
 
 - `index.html`: conteúdo da página
+- `formal.html`: versão formal do portfólio
+- `entrada.css`: estilos da página inicial de escolha
 - `styles.css`: estilos e layout
 - `script.js`: menu para celular e ano no rodapé
 - `Img/foto_perfil.jpeg`: minha foto
@@ -56,6 +59,10 @@ Depois, abra [http://localhost:8000](http://localhost:8000).
 ### Projetos pessoais
 
 Ainda não adicionei projetos pessoais por aqui.
+
+## Versões do portfólio
+
+A página inicial (`index.html`) permite escolher a versão formal (`formal.html`). A versão informal, que vou chamar de **Esboço**, ainda está em preparação.
 
 ---
 

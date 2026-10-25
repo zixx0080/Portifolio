@@ -1,4 +1,5 @@
 :root {
+  /* Cores e fontes principais usadas ao longo do portfólio. */
   --color-ink: #29251f;
   --color-muted: #746d64;
   --color-paper: #fffaf4;
@@ -49,11 +50,13 @@ h2 {
   color: #fff;
 }
 
+/* Mostra o atalho de acessibilidade apenas quando recebe foco pelo teclado. */
 .pular-conteudo:focus {
   transform: translateY(0);
 }
 
 .menu-principal {
+  /* Complementa a navbar do Bootstrap com o visual translúcido do site. */
   border-bottom: 1px solid rgb(234 223 210 / 75%);
   background: rgb(255 250 244 / 94%);
   backdrop-filter: blur(14px);
@@ -121,6 +124,7 @@ h2 {
 }
 
 .secao-inicio {
+  /* Espaço superior considera a altura da navegação fixa. */
   position: relative;
   overflow: hidden;
   padding: 10.5rem 0 6.75rem;
@@ -347,6 +351,7 @@ h2 {
   text-align: center;
 }
 
+/* Estilos compartilhados pelas seções abaixo da apresentação. */
 .secao {
   padding: 6.5rem 0;
 }
@@ -399,6 +404,7 @@ h2 {
   margin-top: 1rem;
 }
 
+/* Linha e marcadores formam a linha do tempo da formação. */
 .linha-formacao {
   position: relative;
   display: grid;
@@ -489,6 +495,7 @@ h2 {
   font-weight: 600;
 }
 
+/* Cada grupo separa uma categoria de tecnologias. */
 .grupo-competencias {
   padding: 0 0 1.6rem;
   margin-bottom: 1.6rem;
@@ -553,6 +560,7 @@ h2 {
   font-weight: 700;
 }
 
+/* Cartões de projeto ganham destaque ao passar o mouse. */
 .cartao-projeto {
   position: relative;
   height: 100%;
@@ -655,6 +663,7 @@ h2 {
   padding-top: 5rem;
 }
 
+/* Bloco final de contato e links para redes sociais. */
 .cartao-contato {
   position: relative;
   display: flex;
@@ -728,6 +737,7 @@ h2 {
   font-size: 0.82rem;
 }
 
+/* Ajustes para tablet e telas menores, em complemento aos breakpoints Bootstrap. */
 @media (max-width: 991.98px) {
   .secao-inicio {
     padding-top: 8.5rem;
@@ -743,6 +753,7 @@ h2 {
   }
 }
 
+/* Ajustes específicos para celulares. */
 @media (max-width: 575.98px) {
   .secao-inicio {
     padding: 7.5rem 0 4.5rem;
@@ -802,6 +813,7 @@ h2 {
   }
 }
 
+/* Respeita a preferência do sistema por menos movimento. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
