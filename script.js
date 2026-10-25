@@ -1,16 +1,16 @@
-const currentYear = document.querySelector("#currentYear");
+const anoAtual = document.querySelector("#currentYear");
 
-if (currentYear) {
-  currentYear.textContent = String(new Date().getFullYear());
+if (anoAtual) {
+  anoAtual.textContent = String(new Date().getFullYear());
 }
 
-const navigationLinks = document.querySelectorAll("#navigationLinks .nav-link");
-const navigationMenu = document.querySelector("#navigationLinks");
+const linksNavegacao = document.querySelectorAll("#navigationLinks .nav-link");
+const menuNavegacao = document.querySelector("#navigationLinks");
 
-navigationLinks.forEach((link) => {
+linksNavegacao.forEach((link) => {
   link.addEventListener("click", () => {
-    if (navigationMenu?.classList.contains("show") && window.bootstrap?.Collapse) {
-      window.bootstrap.Collapse.getOrCreateInstance(navigationMenu).hide();
+    if (menuNavegacao?.classList.contains("show") && window.bootstrap?.Collapse) {
+      window.bootstrap.Collapse.getOrCreateInstance(menuNavegacao).hide();
     }
   });
 });
