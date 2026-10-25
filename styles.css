@@ -127,7 +127,7 @@ h2 {
   /* Espaço superior considera a altura da navegação fixa. */
   position: relative;
   overflow: hidden;
-  padding: 10.5rem 0 6.75rem;
+  padding: 10.5rem 0 3.5rem;
 }
 
 .secao-inicio > .container {
@@ -356,6 +356,10 @@ h2 {
   padding: 6.5rem 0;
 }
 
+#sobre {
+  padding-top: 3.5rem;
+}
+
 .secao-colorida {
   background: #fff3e4;
 }
@@ -578,20 +582,9 @@ h2 {
   box-shadow: 0 0.8rem 2rem rgb(87 56 34 / 7%);
 }
 
-.numero-projeto {
-  display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-bottom: 1.5rem;
-  place-items: center;
-  border-radius: 0.75rem;
-  background: #ffe7cd;
-  color: var(--color-orange-dark);
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
 .tipo-projeto {
+  display: inline-block;
+  margin-bottom: 0.8rem;
   color: var(--color-orange-dark);
   font-size: 0.73rem;
   font-weight: 700;
@@ -756,7 +749,7 @@ h2 {
 /* Ajustes específicos para celulares. */
 @media (max-width: 575.98px) {
   .secao-inicio {
-    padding: 7.5rem 0 4.5rem;
+    padding: 7.5rem 0 2.5rem;
   }
 
   .secao-inicio h1 {
@@ -783,6 +776,10 @@ h2 {
 
   .secao {
     padding: 4.5rem 0;
+  }
+
+  #sobre {
+    padding-top: 2.5rem;
   }
 
   .linha-formacao {
