@@ -511,7 +511,14 @@ h2 {
   border-bottom: 0;
 }
 
-.grupo-competencias h3 {
+.titulo-tipo-competencia {
+  margin-bottom: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.grupo-competencias h4 {
   margin-bottom: 1rem;
   font-size: 1rem;
   font-weight: 700;
